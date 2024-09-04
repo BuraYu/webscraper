@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -13,20 +15,91 @@ body {
   list-style-type: none;
 }
 
-
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
+}
+
+.app-container {
+  background-color: #3891a6;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.input {
+  font-size: 20px;
+  padding: 5px 100px;
+  width: 100%;
+  padding-left: 35px;
+  outline: none;
+  background: #ffffff;
+  color: #000000;
+  border: 0px solid #c4d1eb;
+  border-radius: 20px;
+  box-shadow: 3px 3px 2px 0px #e2e2e2;
+  transition: 0.3s ease;
+}
+
+.input:focus {
+  background: #f2f2f2;
+  border: 1px solid #5a7ec7;
+  border-radius: 10px;
+}
+
+.input::placeholder {
+  color: #199cdd;
+}
+
+.button-scrape {
+  font-family: arial;
+  font-weight: bold;
+  color: #fff !important;
+  font-size: 14px;
+  box-shadow: 1px 1px 1px #bee2f9;
+  padding: 10px 25px;
+  border-radius: 40px;
+  border: 2px solid #4c5b5c;
+  background: #e3655b;
+  width: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.button-scrape:hover {
+  color: #14396a !important;
+  background: #e7928b;
+  
 }
