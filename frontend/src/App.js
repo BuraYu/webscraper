@@ -3,6 +3,7 @@ import "./App.css";
 function App() {
   return (
     <div className="app-container">
+      <h1>AI WebScraper</h1>
       <div className="input-container">
         <label for="websiteInput"></label>
         <input
